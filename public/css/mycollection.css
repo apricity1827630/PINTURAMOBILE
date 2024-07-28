@@ -1,0 +1,214 @@
+@charset "utf-8";
+@import url(fonts.css);
+@import url(all.min.css);
+@media screen and (min-width:200px) and (max-width:1000px) {
+    .wrap {
+        width: 100%;
+        margin: 20px 120px;
+
+    }
+
+    .wrap .hearticon {
+        width: 30px;
+    }
+
+    .wrap .hearticon img {
+        width: 100%;
+    }
+
+    .wrap .text p {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 30px;
+        margin-left: -10%;
+    }
+
+    .wrap .icon {
+        margin: 30px 0;
+    }
+
+    .wrap .icon .btn {
+        display: block;
+        width: 30px;
+
+      
+    }
+
+    .wrap .icon .btn img {
+        display: block;
+width: 100%;
+    }
+
+    .wrap figure {
+        width: 100%;
+
+    }
+
+    .wrap figure img {
+        width: 90%;
+    }
+
+    .wrap .share {
+        border: none;
+        background-color: #FFA574;
+        color: #fff;
+        font-weight: 500;
+        padding: 5px 25px;
+        margin: 10px 20px 10px 16%;
+
+    }
+
+    .wrap .buy {
+        border: none;
+        background-color: #FFA574;
+        color: #fff;
+        font-weight: 500;
+        padding: 5px 25px;
+
+    }
+
+    .tab_group {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .tab {
+        padding: 20px 0 50px
+    }
+
+    .tab ul {
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #ccc;
+
+    }
+
+    .tab ul li {
+        width: 30%;
+        border-bottom: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    .tab ul li button {
+        width: 100%;
+        background: none;
+        height: 58px;
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+        box-sizing: border-box;
+        outline: 0;
+        border: none;
+        cursor: pointer;
+    }
+
+    .tab ul li button:focus,
+    .tab ul li.on button {
+        border: 1px solid #222;
+        color: #222;
+        font-weight: 500;
+
+    }
+
+    .tab_content {
+        line-height: 60px;
+        background: #e5e5e5;
+        text-align: left;
+        font-size: 20px;
+        color: #000;
+        display: none;
+        padding: 0 5px;
+
+    }
+
+    .tab_content.on {
+        display: block;
+        margin-top: -10%;
+        line-height: 40px;
+        font-size: 16px;
+    }
+
+    /* footer */
+    footer {
+        position: fixed;
+        /* 화면에 고정시킵니다. */
+        bottom: 24%;
+        /* 화면 아래쪽에 배치합니다. */
+        left: 20%;
+        /* 왼쪽 정렬합니다. */
+        width: 64%;
+        /* 가로 폭을 100%로 설정하여 화면 전체에 푸터를 늘립니다. */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 6vh;
+        border: 1px solid #c4c4c4;
+        background-color: #fff;
+        border-radius: 30px;
+        z-index: 1000;
+        padding: 0 30px;
+    }
+
+    footer>div>a>img {
+        display: block;
+        width: 30px;
+    }
+
+    /* contents */
+
+    .contents .sideMenu {
+        position: fixed;
+        top: 0;
+        right: -30%;
+        width: 40vw;
+        height: 100vh;
+        background: #fff;
+        padding: 7.50em 0 3.750em;
+        /* padding: 120px 60px 60px / font-size: 16px*/
+        box-sizing: border-box;
+        z-index: 100;
+    }
+
+    .contents .sideMenu .contBox>ul>li {
+        list-style-type: none;
+        box-sizing: border-box;
+        margin-left: 20%;
+    }
+
+
+    .contents .sideMenu .contBox>ul>li>a {
+        font-size: 16px;
+        font-weight: 600;
+        color: #000;
+        text-decoration: none;
+        line-height: 50px;
+    }
+
+    .sideMenu .btnClose {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+    }
+
+    .btnMenu {
+        position: absolute;
+        left: -64px;
+        top: 4%;
+        transform: translateY(-40%);
+        border-radius: 10px;
+        width: 35px;
+        overflow: hidden;
+        border: none;
+        cursor: pointer;
+        background: none;
+    }
+
+    .btnMenu img {
+        display: block;
+        width: 100%;
+    }
+
+
+}

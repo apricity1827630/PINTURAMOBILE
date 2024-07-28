@@ -1,0 +1,64 @@
+@charset "utf-8";
+@import url(fonts.css);
+@import url(all.min.css);
+@media screen and (min-width:200px) and (max-width:1000px) {
+.wrap{
+    margin: 0 auto;
+}
+.inner .icon {
+    margin-left: 5%;
+}
+.wrap .icon a{
+    display: block;
+    width: 30px;
+}
+.wrap .icon a img{
+    display: block;
+width: 100%;
+}
+
+header .inner .login{
+    margin: 20% 10% 0 10%;
+   width: 300px;
+}
+header .inner .login .login_box{
+   width: 100px;
+    display: flex;
+    justify-content: space-between;
+margin-bottom: 5%;
+}
+header .inner .login .login_box .text{
+    margin-top: 5px;
+    font-size: 24px;
+    font-weight: 600;
+}
+header .inner .login input{
+width: 93%;
+height: 40px;
+border-radius: 30px;
+border: 1px solid #d1d1d1;
+margin-bottom: 5%;
+padding: 0 10px;
+}
+
+header .inner .login .loginbutton{
+    width: 100%;
+    height: 40px;
+border-radius: 30px;
+background: #FFA574;
+margin-bottom: 5%;
+border: none;
+color: #fff;
+}
+header .inner .login .password{
+    margin-bottom: 15%;
+}
+header .inner .login .google{
+    border: none;
+    background: none;
+display: flex;
+margin-left: 18%;
+margin-top: 5%;
+}
+}
+

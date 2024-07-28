@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/mycollection.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/mycollection.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="icon">
+            <a href="index.html" class="btn"><img src="image/chevron-left.png" alt=""></a>
+        </div>
+        <figure>
+            <img src="img/pic6.jpg" alt="">
+            
+        </figure>
+        <button type="button" class="share">공유하기</button>
+        <button type="button" class="buy">구매하기</button>
+        <div class="text">
+            <p class="info">이혜승<br>캔버스에 유채<br>
+                89.4×130cm,2019 </p>
+            <p class="en">Untitled,Hyeseung Lee,<br>
+                Oil on canvas,89.4×130cm,2019</p>
+            <p class="price">300,000</p>
+        </div>
+        <div class="tab_group">
+            <nav class="tab">
+                <ul>
+                    <li class="on"><button onclick="showTab(0)">구매유의사항</button></li>
+                    <li><button onclick="showTab(1)">아티스트 소개</button></li>
+                    <li><button onclick="showTab(2)">작품 세부사항</button></li>
+                </ul>
+            </nav>
+            <div class="tab_content on">작품구매는 철회할 수 없으며 부득이한 상황으로 구매 취소시 판매금액의 10% 수수료를 부담하여야 합니다.</div>
+            <div class="tab_content">이혜승
+                Hyeseung Lee<br>물리적인 공간의 이동은 작업에 중요한 영향을 끼친다. 나의 작업에서 길은 미지의 새로운 곳으로 나를 말없이 이끄는 안내자이다. </div>
+            <div class="tab_content">content03</div>
+        </div>
+        <div class="contents">
+            <aside class="sideMenu">
+                <div class="contBox clear">
+                    <ul>
+                        <li>
+                            <a href="login.html">Login</a>
+                        </li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="detail.html">Store</a></li>
+                        <li><a href="#">Artist</a></li>
+                        <li><a href="#">Cart</a></li>
+                        <li><a href="mypage.html">My page</a></li>
+                        <li><a href="#">최근 본 작품</a></li>
+                    </ul>
+                </div>
+                <button class="btnMenu"><img src="image/menu.png" alt="메뉴열기"></button>
+            </aside>
+        </div>
+        <footer>
+            <div class="home">
+                <a href="#">
+                    <img src="image/main.png" alt="">
+                </a>
+            </div>
+            <div class="cart">
+                <a href="detail.html">
+                    <img src="image/shopping-bag.png" alt="">
+                </a>
+            </div>
+            <div class="heart">
+                <a href="mycollection.html">
+                    <img src="image/like3.png" alt="">
+                </a>
+            </div>
+            <div class="mypage">
+                <a href="mypage.html">
+                    <img src="img/account.png" alt="">
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function showTab(tabIndex) {
+            const tabs = document.querySelectorAll('.tab_content');
+            tabs.forEach((tab, index) => {
+                if (index === tabIndex) {
+                    tab.classList.add('on');
+                } else {
+                    tab.classList.remove('on');
+                }
+            });
+
+            const tabItems = document.querySelectorAll('.tab li');`
+            tabItems.forEach((item, index) => {
+                if (index === tabIndex) {
+                    item.classList.add('on');
+                } else {
+                    item.classList.remove('on');
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

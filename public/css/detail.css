@@ -1,0 +1,225 @@
+@charset "utf-8";
+@import url(all.min.css);
+@import url(fonts.css);
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-style: normal;
+}
+
+@media screen and (min-width:200px) and (max-width:1000px) {
+    .wrap {
+        text-align: center;
+        margin: 0 20px;
+        position: relative;
+        overflow: hidden;
+        color: #585858;
+    }
+
+    header {
+ 
+        height: 10vh;
+        margin: 30px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header>a {
+        display: block;
+        width: 30px;
+        height: 30px;
+
+    }
+
+    header .input_area {
+        position: relative;
+    }
+    header .input_area .search{
+        position: absolute;
+        top: 11%; right: 16%;
+    }
+    .input_area input {
+        border: 1px solid #cdcdcd;
+width: 270px;
+      height: 35px;
+      margin-left: -20%;
+  border-radius: 30px;
+    }
+
+    header>a>img {
+        width: 100%;
+    }
+
+    /* header */
+    .wrap .category {
+
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    }
+
+
+    .thema_list {
+        /* display: flex;
+    justify-content: space-between;*/
+        position: relative;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    }
+
+
+    .thema_list .swiper-slide {
+        font-size: 16px;
+        font-weight: 400;
+        color: #222;
+        background: #fff;
+        border: 1px solid #ccc;
+        padding: 6px 3px;
+        border-radius: 20px;
+        text-align: center;
+
+    }
+
+    .thema_list .swiper-slide a {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+
+    }
+
+    /* thema_box */
+    .thema_box {
+        width: 100%;
+        margin: 20px 20px;
+
+    }
+
+    .thema_box .recommand_pic .swiper-wrapper .swiper-slide {}
+
+    .thema_box .recommand_pic .swiper-wrapper .swiper-slide>a {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .thema_box .recommand_pic .swiper-wrapper .swiper-slide>a>.themas {
+        position: absolute;
+        top: 3px;
+        left: 35%;
+        line-height: 10px;
+    }
+
+    .swiper-slide>a>.themas .icon_list {
+        margin-top: 8%;
+        width: 60px;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .themas .icon_list .icon {
+        margin-top: 8%;
+    }
+
+    .swiper-slide>a .themas .title {
+        font-size: 15px;
+        font-weight: 500;
+        color: #000;
+    }
+
+    .swiper-slide>a .artist {
+        font-size: 12px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+
+    .recommand_pic .swiper-wrapper .swiper-slide .icon {
+        background: url(../image/hearton.png) center/cover;
+        width: 20px;
+        height: 20px;
+
+    }
+
+    .swiper-wrapper .swiper-slide .icon.on {
+        background: url(../image/heart.png)no-repeat center/cover;
+
+    }
+
+    .swiper-wrapper .swiper-slide .cart {
+        background: url(../image/carton.png)no-repeat center/cover;
+        width: 25px;
+        height: 25px;
+
+    }
+
+    .swiper-wrapper .swiper-slide .cart.on {
+        background: url(../image/cart.png)no-repeat center/cover;
+    }
+
+
+    .swiper-wrapper .swiper-slide>a>img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .swiper-wrapper .swiper-slide>.img2 figure {
+        background: url(../img/cloud\ with.jpg)no-repeat center/cover;
+    }
+
+
+    .swiper-wrapper .swiper-slide>.img3 figure {
+        background: url(../img/market\ by.jpg)no-repeat center/cover;
+
+    }
+
+    .swiper-wrapper .swiper-slide>.img4 figure {
+        background: url(../img/A-view-city.jpg)no-repeat center/cover;
+    }
+
+
+    .swiper-wrapper .swiper-slide>.img5 figure {
+        background: url(../img/country\ landscape.jpg)no-repeat center/cover;
+    }
+
+
+    .swiper-wrapper .swiper-slide>.img6 figure {
+        background: url(../img/bluecave.jpg)no-repeat center/cover;
+
+    }
+
+
+    .swiper-wrapper .swiper-slide>.img7 figure {
+        background: url(../img/winter\ landscape.jpg)no-repeat center/cover;
+
+    }
+
+
+    .swiper-wrapper .swiper-slide>.img8 figure {
+        background: url(../img/sky\ landscapae.jpg)no-repeat center/cover;
+
+    }
+
+    /* footer */
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 6vh;
+        border: 1px solid #c4c4c4;
+        background-color: #fff;
+        border-radius: 30px 30px 0 0;
+        z-index: 1000;
+        padding: 0 20px;
+    }
+
+    footer>div>a>img {
+        display: block;
+        width: 30px;
+    }
+}

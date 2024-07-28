@@ -1,0 +1,146 @@
+@charset "utf-8";
+@import url(fonts.css);
+@import url(all.min.css);
+@media screen and (min-width:200px) and (max-width:1000px) {
+    html {
+        font-size: 16px;
+        color: #00000055;
+    }
+
+    body {
+        font-family: 'NotoKrR', 'Montserrat Bold', sans-serif;
+
+    }
+
+    .inner {
+        position: relative;
+        max-width: 1440px;
+    }
+
+    .inner h1 {
+        font-size: 26px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 50%;
+    }
+
+    .inner .text {
+        font-size: 14px;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .inner .icon {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .inner .icon .search {
+        position: absolute;
+        top: 0;
+        right: 30px;
+    }
+
+    section,
+    footer {
+        padding: 0 5%;
+    }
+
+    /* header */
+
+    .inner {
+        background: url(../img/main.png)no-repeat center/cover;
+        height: 50vh;
+    }
+
+    /* main */
+  .main .more{
+        border: none;
+    }
+    .swiper {
+ 
+        width: 100%;
+        height: 20vh;
+        border-radius: 20px;
+    }
+
+    .swiper .main_text {
+        font-size: 60px;
+        font-weight: 100;
+        color: #fff;
+        word-spacing: 3px;
+        position: absolute;
+        bottom: -30px;
+        /* left:50%, translateX(-50%)를 하면 가로 가운데로 위치시킬 수 있다. */
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 100%;
+    }
+
+    .autoplay-progress {
+        display: none;
+    }
+
+
+
+
+    .main_text .b_title:hover {
+        font-weight: 700;
+        transition: all 0.6s;
+        background-color: rgb(255, 134, 78);
+    }
+
+    .swiper .swiper-slide img {
+        display: block;
+        position: relative;
+        width: 100%;
+        transform: translateY(-10%);
+
+    }
+
+    .swiper .swiper-button-next {
+        width: 20px;
+    }
+
+    .swiper-slide {
+        position: relative;
+    }
+
+    .m_title {
+        font-size: 20px;
+        font-weight: 600;
+        width: 100%;
+        position: absolute;
+        bottom: 20%;
+        left: 8%;
+        opacity: 0;
+        transition: opacity 2s ease-in-out;
+        text-align: start;
+    }
+
+    .swiper-slide-active .m_title {
+        opacity: 1;
+    }
+
+    /* footer */
+    footer {
+        margin: 10% auto;
+        padding: 0 5%;
+        width: 100%;
+        height: 6vh;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #000;
+        border-radius: 30px;
+        align-items: center;
+    }
+
+    footer>div>a>img {
+
+        display: block;
+        width: 30px;
+
+    }
+}

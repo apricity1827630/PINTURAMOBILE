@@ -1,0 +1,368 @@
+@charset "utf-8";
+@import url(fonts.css);
+@import url(all.min.css);
+@media screen and (min-width:200px) and (max-width:1000px) {
+    .warp {
+        overflow: hidden;
+    }
+
+    header .navbar {
+        position: fixed;
+        position: absolute;
+        top: -3%;
+        right: -5%;
+        width: 100px;
+        z-index: 10;
+        background: none;
+    }
+
+    header .navbar {
+        opacity: 1;
+    }
+
+    header {
+        position: relative;
+    }
+
+    html {
+        font-size: 16px;
+        color: #00000055;
+    }
+
+    body {
+        font-family: 'NotoKrR', 'Montserrat Bold', sans-serif;
+        margin: 0;
+    }
+
+
+
+    section,
+    footer {
+        padding: 0 5%;
+    }
+
+    /* header */
+
+    .inner {
+        background: url(../img/main.png)no-repeat center/cover;
+        height: 50vh;
+        position: relative;
+        padding: 0 3%;
+    }
+
+    .inner h1 {
+        font-size: 26px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 50%;
+    }
+
+    .inner .text {
+        font-size: 14px;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .inner .icon {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .inner .icon .notice {
+        margin-top: 5px;
+    }
+
+    /* main */
+    .main {
+        margin-top: 30px;
+        position: relative;
+    }
+
+    .main>p {
+        font-weight: 700;
+    }
+
+    .main .more {
+        border: 1px solid #000;
+        border-radius: 30px;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        right: 20px;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 20vh;
+        border-radius: 20px;
+    }
+
+    .swiper .main_text {
+        font-size: 20px;
+        color: #fff;
+        word-spacing: keep-all;
+        position: absolute;
+        bottom: -10px;
+
+        /* left:50%, translateX(-50%)를 하면 가로 가운데로 위치시킬 수 있다. */
+
+        text-align: center;
+        width: 100%;
+    }
+
+    .autoplay-progress {
+        display: none;
+    }
+
+    .main_text .b_title:hover {
+        font-weight: 700;
+        transition: all 0.6s;
+        background-color: rgb(255, 134, 78);
+    }
+
+    .swiper .swiper-slide img {
+        display: block;
+        position: relative;
+        width: 100%;
+        transform: translateY(-20%);
+
+    }
+
+    .swiper .swiper-button-next {
+        width: 20px;
+    }
+
+    .swiper-slide {
+        position: relative;
+    }
+
+    /* imglist */
+    .imglist {
+        color: #000;
+        font-weight: 700;
+        position: relative;
+        margin-top: 30px;
+        width: 100%;
+        height: 20vh;
+        overflow: hidden;
+        z-index: 100;
+    }
+
+    .imglist .more {
+        border: 1px solid #000;
+        border-radius: 30px;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        right: 16px;
+    }
+
+    .imglist .picture {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .picture .swiper-wrapper.swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .picture .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100px;
+
+    }
+
+    .picture {
+        width: 100px;
+
+    }
+
+
+    .append-buttons {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .append-buttons button {
+        display: inline-block;
+        cursor: pointer;
+        border: 1px solid #007aff;
+        color: #007aff;
+        text-decoration: none;
+        padding: 4px 10px;
+        border-radius: 4px;
+        margin: 0 10px;
+        font-size: 13px;
+    }
+
+    .m_title {
+        font-size: 20px;
+        font-weight: 600;
+        width: 100%;
+        position: absolute;
+        bottom: 20%;
+        left: 8%;
+        opacity: 0;
+        transition: opacity 2s ease-in-out;
+        text-align: start;
+        color: #fff;
+    }
+
+    .swiper-slide-active .m_title {
+        opacity: 1;
+    }
+
+    /* Artist */
+    .Artist {
+        position: relative;
+        height: 16vh;
+    }
+
+    .Artist .more {
+        border: 1px solid #000;
+        border-radius: 30px;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        right: 16px;
+    }
+
+    .Artist .Artistlist {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .Artist .Artistlist figure {
+        display: block;
+        border-radius: 30px;
+        background: url(../img/people.jpg) no-repeat center/cover;
+        width: 50px;
+        height: 50px;
+    
+    }
+
+
+
+    /* login */
+    header {
+        margin: 0 auto;
+        position: relative;
+        background: none;
+    }
+
+    header .inner .login .text {
+        font-size: 20px;
+        font-weight: 600;
+        position: absolute;
+        top: 30%;
+        left: 10%;
+    }
+
+    header .inner .login .login_icon {
+        position: absolute;
+        top: 30%;
+        left: 25%;
+    }
+
+    header .inner .login .id {
+        border: 1px solid #000;
+        background: none;
+        border-radius: 30px;
+        width: 80%;
+        height: 40px;
+        position: absolute;
+        top: 40%;
+        left: 10%;
+    }
+
+
+
+    /* contents */
+
+    .contents .sideMenu {
+        position: fixed;
+        top: 0;
+        right: -40%;
+        width: 40vw;
+        height: 100vh;
+        background: #fff;
+        padding: 7.50em 0 3.750em;
+        /* padding: 120px 60px 60px / font-size: 16px*/
+        box-sizing: border-box;
+        z-index: 100;
+    }
+
+    .contents .sideMenu .contBox>ul>li {
+        list-style-type: none;
+        box-sizing: border-box;
+    }
+
+
+    .contents .sideMenu .contBox>ul>li>a {
+        font-size: 16px;
+        font-weight: 600;
+        color: #000;
+        text-decoration: none;
+        line-height: 50px;
+
+    }
+
+    .sideMenu .btnClose {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+    }
+
+    .btnMenu {
+        position: absolute;
+        left: -60px;
+        top: 2%;
+        transform: translateY(-50%);
+        border-radius: 10px;
+        width: 35px;
+        overflow: hidden;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btnMenu img {
+        display: block;
+        width: 100%;
+    }
+
+    /* footer */
+    footer {
+        position: fixed;
+        /* 화면에 고정시킵니다. */
+        bottom: 0;
+        /* 화면 아래쪽에 배치합니다. */
+        left: 0;
+        /* 왼쪽 정렬합니다. */
+        width: 100%;
+        /* 가로 폭을 100%로 설정하여 화면 전체에 푸터를 늘립니다. */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 6vh;
+        border: 1px solid #c4c4c4;
+        background-color: #fff;
+        border-radius: 30px 30px 0 0;
+        z-index: 1000;
+    }
+
+    footer>div>a>img {
+        display: block;
+        width: 30px;
+    }
+
+
+
+
+}
